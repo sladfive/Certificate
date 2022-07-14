@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.noirsolutions.net/esempi/php/CRT7/stile/fogliostile.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MY BLOG</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>TITLE HEADING</b></h3>
+      <h4>Title description, <span class="w3-opacity">April 7, 2014</span></h4>
+    </div>
+
+    <div class="w3-container">
+	
+	
+	<div class="example">
+<script>
+var myRequest = null;
+
+function CreateXmlHttpReq2(handler) {
+  var xmlhttp = null;
+  try {
+    xmlhttp = new XMLHttpRequest();
+  } catch(e) {
+    try {
+        xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+    } catch(e) {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+  }
+  xmlhttp.onreadystatechange = handler;
+  return xmlhttp;
+}
+
+function myHandler2() {
+    if (myRequest.readyState == 4 && myRequest.status == 200) {
+        e = document.getElementById("ex4result");
+        e.innerHTML = myRequest.responseText;
+    }
+}
+
+function esempio4() {
+    var field1 = document.f1.field1.value;
+	var field2 = document.f1.field2.value;
+	var field3 = document.f1.field3.value;
+	var field4 = document.f1.field4.value;
+	var field5 = document.f1.field5.value;
+	var field6 = document.f1.field6.value;
+	var field7 = document.f1.field7.value;
+	var fieldCA1 = document.f1.fieldCA1.value;
+	var fieldCA2 = document.f1.fieldCA2.value;
+	var fieldCA3 = document.f1.fieldCA3.value;
+	
+	
+	
+    var r = Math.random();
+    myRequest = CreateXmlHttpReq2(myHandler2);
+    myRequest.open("GET","secondo.php?field1="+escape(field1)+"&field2="+escape(field2)+"&field3="+escape(field3)+"&field4="+escape(field4)+"&field5="+escape(field5)+"&field6="+escape(field6)+"&field7="+escape(field7)+"&fieldCA1="+escape(fieldCA1)+"&fieldCA2="+escape(fieldCA2)+"&fieldCA3="+escape(fieldCA3)+"&rand="+escape(r));
+    myRequest.send(null);
+}
+</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+      <p>
+	  
+	  
+	    <h5><b>Date Client</b></h5>
+
+	 	 
+	<form name="f1">  
+	  
+	  <label for="fname">State Or Province Name:</label><br>
+  <input type="text" id="field1" name="field1"><br>
+  <label for="lname">Country Name:</label><br>
+  
+  
+  
+  <select id="field2" name="field2">
+  <option value="IT">Italia</option>
+  <option value="GE">Germania</option>
+  <option value="FR">Francia</option>
+  <option value="US">USA</option>
+  <option value="ES">Spagna</option>
+  
+  
+  
+  
+  
+</select>
+	  
+	<label for="lname">Locality Name:</label><br>
+  <input type="text" id="field3" name="field3">
+    
+	   
+	<label for="lname">Organization Name:</label><br>
+  <input type="text" id="field4" name="field4">
+  
+  
+  
+  <label for="lname">Organization Unit Name:</label><br>
+  <input type="text" id="field5" name="field5">
+	  
+	 
+
+  <label for="lname">Common Name:</label><br>
+  <input type="text" id="field6" name="field6">
+	  
+
+
+  <label for="lname">Email Address:</label><br>
+  <input type="text" id="field7" name="field7">
+  
+  
+  
+	 
+	  </p>
+	  
+	  <p>
+	  
+	  
+	  
+	    <h5><b>Date CA Certification Authority</b></h5>
+	  
+	  
+  <label for="lname">Common Name:</label><br>
+  <input type="text" id="fieldCA1" name="fieldCA1">
+  
+	    <label for="lname">Organizzation:</label><br>
+  <input type="text" id="fieldCA2" name="fieldCA2">
+  
+	  
+	      <label for="lname">Country Name:</label><br>
+  <input type="text" id="fieldCA3" name="fieldCA3">
+	  
+	  </p>
+	  
+	  
+	  
+	<input type="button" onClick="esempio4()" value="Visualizza cognome" />  
+	  
+	  
+	  
+	  <div id="ex4result"></div>
+	  
+	  
+	  
+	  
+	</form>  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+ 
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="/w3images/avatar_g.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>My Name</b></h4>
+      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+
+</footer>
+
+</body>
+</html>

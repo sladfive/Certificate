@@ -1,0 +1,97 @@
+<?php
+
+
+if (isset($_GET['field1'])) {
+ 
+ echo("entrato in INSERIMENTO AVVENUTO <br>");
+ 
+ 
+ $field1 = $_GET['field1'];
+ 
+  
+
+ 
+  $field1 = filter_var($field1,
+    FILTER_SANITIZE_STRING);
+
+
+ 
+ 
+ $field2 = $_GET['field2'];
+ $field3 = $_GET['field3'];
+ $field4 = $_GET['field4'];
+ $field5 = $_GET['field5'];
+ $field6 = $_GET['field6'];
+ $field7 = $_GET['field7'];
+ 
+
+$field2 = filter_var($field2,
+    FILTER_SANITIZE_STRING);
+	
+$field3 = filter_var($field3,
+    FILTER_SANITIZE_STRING);
+ 	
+	
+	$field4 = filter_var($field4,
+    FILTER_SANITIZE_STRING);
+ 
+ $field5 = filter_var($field5,
+    FILTER_SANITIZE_STRING);
+ 
+ $field6 = filter_var($field6,
+    FILTER_SANITIZE_STRING);
+ 
+ $field7 = filter_var($field7,
+    FILTER_SANITIZE_EMAIL);
+ 
+ 
+ 
+ 
+ 
+ $fieldCA1 = $_GET['fieldCA1'];
+ $fieldCA2 = $_GET['fieldCA2'];
+ $fieldCA3 = $_GET['fieldCA3'];
+ 
+ $fieldCA1 = filter_var($fieldCA1,
+    FILTER_SANITIZE_STRING);
+ 
+ $fieldCA2 = filter_var($fieldCA2,
+    FILTER_SANITIZE_STRING);
+ 
+ $fieldCA3 = filter_var($fieldCA3,
+    FILTER_SANITIZE_STRING);
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ echo  "<br>FIELD1 $field1 <br>";
+ echo  "<br>FIELD2 $field2 <br>";
+ echo  "<br>FIELD3 $field3 <br>";
+ echo  "<br>FIELD4 $field4 <br>";
+ echo  "<br>FIELD5 $field5 <br>";
+ echo  "<br>FIELD6 $field6 <br>";
+ echo  "<br>FIELD7 $field7 <br>";
+ 
+ 
+  echo  "<br>FIELDCA1 $fieldCA1 <br>";
+  
+  echo  "<br>FIELDCA2 $fieldCA2 <br>";
+  
+  echo  "<br>FIELDCA3 $fieldCA3 <br>";
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}
+
+
+
+?>
